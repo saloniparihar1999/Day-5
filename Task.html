@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+        const data = {
+            "people": [
+                { "id": 1, "name": "Saloni" },
+                { "id": 2, "name": "Rohan" },
+                { "id": 3, "name": "Aditya" }
+            ]
+        };
+
+
+        for (let i = 0; i < data.people.length; i++) {
+            console.log('for', data.people[i]);
+        }
+
+        for (let index in data.people) {
+            console.log('for in', data.people[index]);
+        }
+
+        for (let person of data.people) {
+            console.log('for of', person);
+        }
+
+        data.people.forEach((person) => {
+            console.log('for each', person);
+        });
+
+        // 1.2   create your own resume data in JSON format
+
+        const resume = {
+            "name": "Saloni Parihar",
+            "contact": {
+                "email": "saloniparihar1999@gmail.com",
+                "phone": "6261019362",
+                "location": "Indore MP",
+                
+            },
+            "objective": "Fresher and looking for effective job in software developer role": [
+                {
+                    "degree": "B.E. in Computer Science",
+                    "year": "2019-2023",
+                    
+                }
+            ],
+            "experience": [
+                {
+                    "position": "Software Engineer Intern",
+                    "company": "Veave Technoligies Pvt Ltd",
+                    "location": "Banglore",
+                    "year": "2022-2023",
+                    "responsibilities": [
+                        "Developed web applications using JavaScript, HTML,CSS",
+                        "Worked with cross-functional teams to design user-friendly interfaces.",
+                       
+                    ]
+                }
+            ],
+            "skills": [
+                "JavaScript", "Python", "React","c","C++","Java"
+            ],
+            "languages": [
+                {
+                    "language": "English",
+                    "proficiency": "Native"
+                }
+            ],
+            "hobbies": ["Photography", "Traveling", "Reading"]
+        }
+
+
+    </script>
+</body>
+
+</html>
